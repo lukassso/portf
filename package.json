@@ -39,5 +39,6 @@
   "bugs": {
     "url": "https://github.com/lukassso/portf/issues"
   },
-  "homepage": "https://github.com/lukassso/portf#readme"
+  "homepage": "https://github.com/lukassso/portf#readme",
+  "dependencies": {}
 }
