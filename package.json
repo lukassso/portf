@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "test gti + npm",
   "main": "index.js",
-  "scripts": {},
   "keywords": [],
+  "scripts": {
+    "test": "echo 'To nasz testowy skrypt'",
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production"
+  },
   "author": "och-karr",
   "license": "ISC",
   "devDependencies": {
@@ -14,7 +18,8 @@
     "node-sass": "^4.9.4",
     "normalize.css": "^8.0.0",
     "npm-run-all": "^4.1.3",
-    "onchange": "^5.0.2"
+    "onchange": "^5.0.2",
+    "webpack-cli": "^3.2.1"
   },
   "repository": {
     "type": "git",
@@ -25,6 +30,7 @@
   },
   "homepage": "https://github.com/lukassso/portf#readme",
   "dependencies": {
-    "bundle-js": "^1.0.2"
+    "bundle-js": "^1.0.2",
+    "webpack": "^4.28.4"
   }
 }
