@@ -3907,7 +3907,6 @@ Created using IcoMoon - icomoon.io
   display: inline-block;
   font: normal normal normal 14px/1 'Nucleo Outline';
   font-size: inherit;
-  speak: none;
   text-transform: none;
   /* Better Font Rendering */
   -webkit-font-smoothing: antialiased;
@@ -4712,7 +4711,7 @@ Created using IcoMoon - icomoon.io
 
 .footer nav {
   display: inline-block;
-  float: left;
+
 }
 
 .footer ul {
@@ -7153,13 +7152,14 @@ Created using IcoMoon - icomoon.io
 /* Education Style */
 .cc-education .h5 {
   margin-bottom: 0;
+  font-weight: bold;
 }
 
 .cc-education .cc-education-header {
-  padding-top: 60px;
+  font-weight: bold;
+  text-align: right;
   padding-right: 0;
-  text-align: center;
-  color: #fff;
+  color: #2c2c2c;
 }
 
 /* References Style */
