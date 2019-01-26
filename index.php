@@ -9,8 +9,11 @@
   <meta name="description" content="Hello! I am Lukasz Koladko. Junior Web Developer and Graphic Designer. I would like to indroduce my resume." />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/aos.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="css/aos.css" rel="stylesheet"> -->
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
   <link href="styles/main.css" rel="stylesheet">
 </head>
 
@@ -68,7 +71,10 @@
               <div class="col-lg-6 col-md-12">
                 <div class="card-body">
                   <div class="h4 mt-0 title">About</div>
-                  <p>Hello! I am Lukasz Koladko. Junior Web Developer and Graphic Designer</p><p> I would like to introduce my application. I have experience in growing business processes and improving these. I was a team lead on a few e-commerce projects but I know my best position is on the desk and coding. That is what I prefer as much </p>
+                  <p>Hello! I am Lukasz Koladko. Junior Web Developer and Graphic Designer</p>
+                  <p> I would like to introduce my application. I have experience in growing business processes and
+                    improving these. I was a team lead on a few e-commerce projects but I know my best position is on
+                    the desk and coding. That is what I prefer as much </p>
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
@@ -385,75 +391,87 @@
           <div class="section">
             <div class="container cc-education">
               <div class="h4 text-center mb-4 title">Education</div>
-              
-                  <div class="row">
-                    <div class="col-md-4" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                      <div class="cc-education-header">
-                          <p>2005 - 2009</p>
-                        <div class="h5">Warsaw University of Technology</div>
-                        
+
+              <div class="row">
+                <div class="col-md-4" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="cc-education-header">
+                    <p>2005 - 2009</p>
+                    <div class="h5">Warsaw University of Technology</div>
+
+                  </div>
+                </div>
+                <div class="col-md-8" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <p>Mechatronics - Engineer's degree </p>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!--reference-->
+          <div class="section" id="reference">
+            <div class="container cc-reference">
+              <div class="h4 mb-4 text-center title">References</div>
+              <div class="card" data-aos="zoom-in">
+                <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
+                    <li data-target="#cc-Indicators" data-slide-to="1"></li>
+                    <li data-target="#cc-Indicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/person2.png" alt="Image" />
+                          <div class="h5 pt-2">Maria</div>
+                          <p class="category">CEO / WEBM</p>
+                        </div>
+                        <div class="col-lg-10 col-md-9">
+                          <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad,
+                            est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac
+                            quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur
+                            donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus
+                            semper felis parturient fringilla rhoncus eleifend.</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-md-8" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                      <div class="card-body">
-                        <p>Mechatronics - Engineer's degree </p>
-                        
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/person11.png" alt="Image" />
+                          <div class="h5 pt-2">Karol</div>
+                          <p class="category">CEO / Creativem</p>
+                        </div>
+                        <div class="col-lg-10 col-md-9">
+                          <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad,
+                            est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac
+                            quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur
+                            donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus
+                            semper felis parturient fringilla rhoncus eleifend.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/person11.png" alt="Image" />
+                          <div class="h5 pt-2">Roberto</div>
+                          <p class="category">CEO / Webnote</p>
+                        </div>
+                        <div class="col-lg-10 col-md-9">
+                          <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad,
+                            est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac
+                            quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur
+                            donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus
+                            semper felis parturient fringilla rhoncus eleifend.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                
-            </div>
-          </div>
- <!--reference-->         
-<div class="section" id="reference">
-  <div class="container cc-reference">
-    <div class="h4 mb-4 text-center title">References</div>
-    <div class="card" data-aos="zoom-in">
-      <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
-          <li data-target="#cc-Indicators" data-slide-to="1"></li>
-          <li data-target="#cc-Indicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/person2.png" alt="Image"/>
-                <div class="h5 pt-2">Maria</div>
-                <p class="category">CEO / WEBM</p>
-              </div>
-              <div class="col-lg-10 col-md-9">
-                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/person11.png" alt="Image"/>
-                <div class="h5 pt-2">Karol</div>
-                <p class="category">CEO / Creativem</p>
-              </div>
-              <div class="col-lg-10 col-md-9">
-                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/person11.png" alt="Image"/>
-                <div class="h5 pt-2">Roberto</div>
-                <p class="category">CEO / Webnote</p>
-              </div>
-              <div class="col-lg-10 col-md-9">
-                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
           <div class="section" id="contact">
             <div class="cc-contact-information" style="background-image: url('images/staticmap.png');">
@@ -466,7 +484,7 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="card-body">
-                              <form action="" method="POST">
+                              <!-- <form action="" method="POST">
                                 <div class="p pb-3"><strong>Feel to contact me </strong></div>
                                 <div class="row mb-3">
                                   <div class="col">
@@ -503,9 +521,62 @@
                                     <button class="btn btn-primary" type="submit">Send</button>
                                   </div>
                                 </div>
-                              </form>
-                            </div>
+                              </form>-->
+
+                              
+                          <?php
+                          $error = "";
+                          $successMessage = "";
+                          if ($_POST) {
+                              if (!$_POST["email"]) {
+                                  $error .="An email address is required.<br>";
+                              }
+                              if (!$_POST["content"]) {
+                                  $error .="The content field is required.<br>";
+                              }
+                              if (!$_POST["subject"]) {
+                                  $error .="The subject is required.";
+                              }
+                              if ($_POST['email'] && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) === false) {
+                                  $error .="An email address is invalid.<br>";
+                              }
+                              if ($error != "") {
+                                  $error = '<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' . $error . '</div>';
+                              } else {
+                                  $emailTo = "lukasz.koladko@gmail.com";
+                                  $subject = $_POST['subject'];
+                                  $content = $_POST['content'];
+                                  $headers = "From: ".$_POST['email'];
+                                  if (mail($emailTo, $subject, $content, $headers)) {
+                                      $successMessage = '<div class="alert alert-success" role="alert">Your message was sent, we\'ll get back to you ASAP!</div>';
+                                  } else {
+                                      $error = '<div class="alert alert-danger" role="alert">Your message couldn\'t be sent - please try again later</div>';
+                                  }
+                              }
+                          }
+                      ?>
+
+
+                              <form method="post">
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" name="subject">
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label for="content">What would you like to ask us?</label>
+                                    <textarea class="form-control" id="content" name="content" rows="3"></textarea>
+                                </div>
+                                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                            </div> 
                           </div>
+
+
                           <div class="col-md-6">
                             <div class="card-body">
                               <p class="mb-0"><strong>Address </strong></p>
@@ -530,16 +601,20 @@
         <div class="container text-center"><a class="cc-linkedin btn btn-link" href="https://www.linkedin.com/in/lukasz-koladko/"><i
               class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a></div>
         <div class="h4 title text-center">Lukasz Koladko</div>
-        <div class="text-center text-muted">
-          <p>&copy; Creative CV. All rights reserved.</p>
-        </div>
       </footer>
-      <script src="js/core/jquery.3.2.1.min.js"></script>
-      <script src="js/core/popper.min.js"></script>
-      <script src="js/core/bootstrap.min.js"></script>
-      <script src="js/now-ui-kit.js?v=1.1.0"></script>
-      <script src="js/aos.js"></script>
-      <script src="scripts/main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+      <!-- <script src="js/core/jquery.3.2.1.min.js"></script> -->
+      <!-- <script src="js/core/popper.min.js"></script> -->
+      <!-- <script src="js/core/bootstrap.min.js"></script> -->
+      <!-- <script src="js/now-ui-kit.js?v=1.1.0"></script> -->
+      <!-- <script src="js/aos.js"></script> -->
+      <!-- <script src="scripts/main.js"></script> -->
+      <script src="js/script.js"></script>
+
 </body>
 
 </html>
