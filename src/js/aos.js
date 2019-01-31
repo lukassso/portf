@@ -106,7 +106,7 @@
             return !!e && ("object" == t || "function" == t)
         }
         var a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) {
-                return typeof e
+                 return typeof e
             } : function (e) {
                 return e && "function" == typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
             },
