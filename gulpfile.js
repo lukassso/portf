@@ -2,8 +2,16 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const runSequence = require('run-sequence');
-var imagemin = require('gulp-imagemin');
-var cache = require('gulp-cache');
+const imagemin = require('gulp-imagemin');
+const cache = require('gulp-cache');
+// const useref = require('gulp-useref');
+// const gulpIf = require('gulp-if');
+// const cssnano = require('gulp-cssnano');
+const gutil = require('gulp-util');
+const concat = require('gulp-concat');
+const babili = require("gulp-babili");
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
 
 // gulp.task('default', defaultTask);
 // function defaultTask(done) {
@@ -19,27 +27,31 @@ gulp.task('default', (callback) => {
 gulp.task('browserSync', () => {
     browserSync.init( {
         server: {
-            baseDir: 'src'
+            baseDir: 'dist'
         },
     })
 })
 
 gulp.task('sass', () => {
-    return gulp.src('src/scss/**/*.scss')
-    .pipe(sass())
+    return gulp.src('src/scss/**/*.+(css|scss)')
+    .pipe(sourcemaps.init())
+    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(autoprefixer ({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.reload({
         stream: true
     }))
 })
 
-
-gulp.task('watch', ['browserSync', 'sass'], () => {
-    gulp.watch('src/scss/**/*.scss',['sass']);
-    gulp.watch('src/*.html', browserSync.reload);
+gulp.task('watch', () => {
+    gulp.watch('src/scss/**/*.+(css|scss)',['sass']);
+    gulp.watch('dist/*.html', browserSync.reload);
     gulp.watch('src/js/**/*.js', browserSync.reload);
 })
-
 
 gulp.task('images', function () {
   return gulp.src('src/img/**/*.+(png|jpg|jpeg|gif|svg)')
@@ -47,4 +59,24 @@ gulp.task('images', function () {
     interlaced: true
    })))
   .pipe(gulp.dest('dist/img'))
-});
+})
+
+// gulp.task('useref', () => {
+//   return gulp.src('dist/css/*.css')
+//   .pipe(gulpIf('*.css', cssnano()))
+//   .pipe(gulp.dest('dist/css'))
+// })
+
+gulp.task('scripts', function () {
+  return gulp.src(['src/js/*.js'])
+  .pipe(concat('main.min.js'))
+  .pipe(babili({
+    mangle: {
+      keepClassNames: true
+    }
+  }))
+  .on('error', function (err) {
+    gutil.log(gutil.colors.red('[Error]'), err.toString());
+  })
+  .pipe(gulp.dest('dist/js'));
+})
