@@ -20,7 +20,7 @@ const autoprefixer = require('gulp-autoprefixer');
 // }
 
 gulp.task('default', (callback) => {
-  runSequence(['watch', 'sass', 'browserSync'],
+  runSequence(['watch', 'sass', 'scripts', 'browserSync'],
   callback)
 })
 
@@ -36,6 +36,7 @@ gulp.task('sass', () => {
     return gulp.src('src/scss/**/*.+(css|scss)')
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}))
+    
     .pipe(autoprefixer ({
       browsers: ['last 2 versions'],
       cascade: false

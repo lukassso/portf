@@ -21,7 +21,7 @@
     margin-right: 20px;
     background: rgba(44, 44, 44, .2)
 }
-/*
+
 .bootstrap-switch .bootstrap-switch-container {
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -254,7 +254,7 @@
 }
 
 /*! nouislider - 9.1.0 - 2016-12-10 16:00:32 */
-/* .noUi-target,
+.noUi-target,
 .noUi-target * {
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: transparent;
@@ -365,7 +365,6 @@
     -webkit-transition: .3s ease 0s;
     -moz-transition: .3s ease 0s;
     -ms-transition: .3s ease 0s;
-    -o-transform: .3s ease 0s;
     transition: .3s ease 0s
 }
 
@@ -486,8 +485,8 @@
     transform: translateY(-50%);
     top: 50%;
     right: 120%
-} */
-/* 
+}
+
 .slider.slider-neutral.noUi-connect,
 .slider.slider-neutral .noUi-connect {
     background-color: #fff
@@ -571,7 +570,7 @@
  *
  * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
  */
-/* .datepicker {
+datepicker {
     padding: 8px 6px;
     border-radius: 4px;
     direction: ltr;
@@ -815,8 +814,8 @@
 
 .datepicker th {
     color: #603813
-}  */
-/* 
+} 
+ 
 .table-condensed>tbody>tr>td,
 .table-condensed>tbody>tr>th,
 .table-condensed>tfoot>tr>td,
@@ -901,7 +900,7 @@
 .datepicker table tr td.today:active,
 .datepicker table tr td.today:hover.active,
 .datepicker table tr td.today:hover:active {
-    background-color: #fbf069\9
+    background-color: #fbf069
 }
 
 .datepicker table tr td.today:hover:hover {
@@ -965,7 +964,7 @@
 .datepicker table tr td.range.today:active,
 .datepicker table tr td.range.today:hover.active,
 .datepicker table tr td.range.today:hover:active {
-    background-color: #efe24b\9
+    background-color: #efe24b
 }
 
 .datepicker table tr td.selected,
@@ -1014,7 +1013,7 @@
 .datepicker table tr td.selected:active,
 .datepicker table tr td.selected:hover.active,
 .datepicker table tr td.selected:hover:active {
-    background-color: #666\9
+    background-color: #666
 }
 
 .datepicker table tr td.active.disabled:hover div,
@@ -1057,7 +1056,7 @@
 .datepicker table tr td.active:active,
 .datepicker table tr td.active:hover.active,
 .datepicker table tr td.active:hover:active {
-    background-color: #039\9
+    background-color: #039
 }
 
 .datepicker table tr td span {
@@ -1124,7 +1123,7 @@
 .datepicker table tr td span.active:active,
 .datepicker table tr td span.active:hover.active,
 .datepicker table tr td span.active:hover:active {
-    background-color: #039\9
+    background-color: #039
 }
 
 .datepicker table tr td span.new,
@@ -1180,8 +1179,8 @@
     width: 12px;
     padding: 0 2px 0 5px;
     vertical-align: middle
-} */
-/* 
+} 
+
 .input-append.date .add-on,
 .input-prepend.date .add-on {
     cursor: pointer
@@ -1219,7 +1218,7 @@
     border: 1px solid #ccc;
     margin-left: -5px;
     margin-right: -5px
-} */
+}
 
 .btn,
 .navbar .navbar-nav>a.btn {
@@ -1235,7 +1234,7 @@
     background-color: #888;
     color: black;
 }
-/* 
+
 .btn.active,
 .btn.active:focus,
 .btn.active:hover,
@@ -1318,7 +1317,7 @@ fieldset[disabled] .navbar .navbar-nav>a.btn:focus,
 fieldset[disabled] .navbar .navbar-nav>a.btn:hover {
     background-color: #888;
     border-color: #888
-} */
+}
 
 .btn.btn-simple,
 .navbar .navbar-nav>a.btn.btn-simple {
