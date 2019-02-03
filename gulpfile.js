@@ -20,14 +20,14 @@ const autoprefixer = require('gulp-autoprefixer');
 // }
 
 gulp.task('default', (callback) => {
-  runSequence(['watch', 'sass', 'scripts', 'browserSync'],
+  runSequence(['watch', 'sass', 'browserSync'],
   callback)
 })
 
 gulp.task('browserSync', () => {
     browserSync.init( {
         server: {
-            baseDir: 'dist'
+            baseDir: './'
         },
     })
 })
@@ -42,7 +42,7 @@ gulp.task('sass', () => {
       cascade: false
     }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
         stream: true
     }))
@@ -50,7 +50,7 @@ gulp.task('sass', () => {
 
 gulp.task('watch', () => {
     gulp.watch('src/scss/**/*.+(css|scss)',['sass']);
-    gulp.watch('dist/*.html', browserSync.reload);
+    gulp.watch('*.html', browserSync.reload);
     gulp.watch('src/js/**/*.js', browserSync.reload);
 })
 
@@ -59,7 +59,7 @@ gulp.task('images', function () {
   .pipe(cache(imagemin({
     interlaced: true
    })))
-  .pipe(gulp.dest('dist/img'))
+  .pipe(gulp.dest('img'))
 })
 
 // gulp.task('useref', () => {
@@ -79,5 +79,5 @@ gulp.task('scripts', function () {
   .on('error', function (err) {
     gutil.log(gutil.colors.red('[Error]'), err.toString());
   })
-  .pipe(gulp.dest('dist/js'));
+  .pipe(gulp.dest('js'));
 })
