@@ -1,36 +1,36 @@
 {
-  "name": "portfo",
+  "name": "portf",
   "version": "1.0.0",
-  "description": "test gti + npm",
+  "description": "",
   "main": "index.js",
-  "keywords": [],
   "scripts": {
-    "test": "echo 'To nasz testowy skrypt'",
-    "dev": "webpack --mode development",
-    "prod": "webpack --mode production"
-  },
-  "author": "och-karr",
-  "license": "ISC",
-  "devDependencies": {
-    "animate.css": "^3.7.0",
-    "aos": "^2.3.3",
-    "autoprefixer": "^9.4.5",
-    "node-sass": "^4.9.4",
-    "normalize.css": "^8.0.0",
-    "npm-run-all": "^4.1.3",
-    "onchange": "^5.0.2",
-    "webpack-cli": "^3.2.1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lukassso/portf.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/lukassso/portf/issues"
   },
   "homepage": "https://github.com/lukassso/portf#readme",
-  "dependencies": {
-    "bundle-js": "^1.0.2",
-    "webpack": "^4.28.4"
-  }
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babili": "^0.1.4",
+    "gulp-cache": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-useref": "^3.1.6",
+    "gulp-util": "^3.0.8",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {}
 }
