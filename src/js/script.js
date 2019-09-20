@@ -30,3 +30,10 @@ $("form").submit(function (e) {
     }
 
 });
+
+$('#number11').click(function() {
+  $(this).find('span').text( $(this).data('last') );
+});
+$('#number22').click(function() {
+  $(this).find('span').text( $(this).data('last') );
+});
