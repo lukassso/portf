@@ -7,12 +7,7 @@ $(document).ready(function() {
     // once: true  
   }); // initialize animate on scroll library
 });
-$('#number11').click(function() {
-  $(this).find('span').text( $(this).data('last') );
-});
-$('#number22').click(function() {
-  $(this).find('span').text( $(this).data('last') );
-});
+
 // Smooth scroll for links with hashes
 $('a.smooth-scroll')
 .click(function(event) {

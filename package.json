@@ -32,5 +32,7 @@
     "gulp-util": "^3.0.8",
     "run-sequence": "^2.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }
