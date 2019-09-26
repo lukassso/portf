@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/lukassso/portf#readme",
   "devDependencies": {
+    "@codechecks/build-size-watcher": "^0.1.0",
+    "@codechecks/client": "^0.1.10",
     "browser-sync": "^2.26.3",
     "css-loader": "^3.2.0",
     "postcss-loader": "^3.0.0",
