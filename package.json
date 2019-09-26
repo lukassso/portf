@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lukassso/portf.git"
   },
-  "author": "",
+  "author": "lukasz zatyka",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lukassso/portf/issues"
@@ -18,21 +19,16 @@
   "homepage": "https://github.com/lukassso/portf#readme",
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-babili": "^0.1.4",
-    "gulp-cache": "^1.1.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-useref": "^3.1.6",
-    "gulp-util": "^3.0.8",
-    "run-sequence": "^2.2.1"
+    "css-loader": "^3.2.0",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.22.12",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
   },
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1"
   }
 }

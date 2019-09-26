@@ -2,15 +2,15 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const runSequence = require('run-sequence');
-const imagemin = require('gulp-imagemin');
+// const imagemin = require('gulp-imagemin');
 const cache = require('gulp-cache');
 // const useref = require('gulp-useref');
 // const gulpIf = require('gulp-if');
 // const cssnano = require('gulp-cssnano');
-const gutil = require('gulp-util');
+// const gutil = require('gulp-util');
 const concat = require('gulp-concat');
-const babili = require("gulp-babili");
-const sourcemaps = require('gulp-sourcemaps');
+// const babili = require("gulp-babili");
+// const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 
 // gulp.task('default', defaultTask);
@@ -34,21 +34,21 @@ gulp.task('browserSync', () => {
     })
 })
 
-gulp.task('sass', () => {
-    return gulp.src('src/scss/**/*.+(css|scss)')
-    .pipe(sourcemaps.init())
-    .pipe(sass({outputStyle: 'compressed'}))
+// gulp.task('sass', () => {
+//     return gulp.src('src/scss/**/*.+(css|scss)')
+//     .pipe(sourcemaps.init())
+//     .pipe(sass({outputStyle: 'compressed'}))
     
-    .pipe(autoprefixer ({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('css'))
-    .pipe(browserSync.reload({
-        stream: true
-    }))
-})
+//     .pipe(autoprefixer ({
+//       browsers: ['last 2 versions'],
+//       cascade: false
+//     }))
+//     // // .pipe(sourcemaps.write())
+//     // .pipe(gulp.dest('css'))
+//     // .pipe(browserSync.reload({
+//     //     stream: true
+//     // }))
+// })
 
 gulp.task('watch', () => {
     gulp.watch('src/scss/**/*.+(css|scss)',['sass']);
@@ -70,16 +70,16 @@ gulp.task('images', function () {
 //   .pipe(gulp.dest('dist/css'))
 // })
 
-gulp.task('scripts', function () {
-  return gulp.src(['src/js/*.js'])
-  .pipe(concat('main.min.js'))
-  .pipe(babili({
-    mangle: {
-      keepClassNames: true
-    }
-  }))
-  .on('error', function (err) {
-    gutil.log(gutil.colors.red('[Error]'), err.toString());
-  })
-  .pipe(gulp.dest('js'));
-})
+// gulp.task('scripts', function () {
+//   return gulp.src(['src/js/*.js'])
+//   .pipe(concat('main.min.js'))
+//   .pipe(babili({
+//     mangle: {
+//       keepClassNames: true
+//     }
+//   }))
+//   .on('error', function (err) {
+//     gutil.log(gutil.colors.red('[Error]'), err.toString());
+//   })
+//   .pipe(gulp.dest('js'));
+// })
