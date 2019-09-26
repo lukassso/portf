@@ -1,0 +1,26 @@
+checks:
+- name: vis-reg-routes
+  options:
+    collectionName: app
+    buildPath: ./dist
+    routes:
+    - /
+
+- name: build-size-watcher 
+  options:
+    name: Size
+    gzip: false
+    files:
+      - path: "./dist/*.js"
+      - path: "./dist/*.css"
+      - path: "./dist/*.svg"
+
+- name: build-size-watcher 
+  options:
+    name: Size (GZIP)
+    gzip: true
+    files:
+      - path: "./dist/*.js"
+        maxSize: 1MB
+      - path: "./dist/*.css"
+      - path: "./dist/*.svg"
