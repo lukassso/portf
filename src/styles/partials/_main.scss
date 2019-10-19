@@ -1025,13 +1025,7 @@ img {
     box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2)
 }
 
-@font-face {
-    font-family: Nucleo Outline;
-    src: url(../fonts/nucleo-outline.eot);
-    src: url(../fonts/nucleo-outline.eot) format("embedded-opentype"), url(../fonts/nucleo-outline.woff2) format("woff2"), url(../fonts/nucleo-outline.woff) format("woff"), url(../fonts/nucleo-outline.ttf) format("truetype");
-    font-weight: 400;
-    font-style: normal
-}
+
 
 .now-ui-icons {
     display: inline-block;
@@ -2163,7 +2157,8 @@ img {
 .page-header,
 .page-header .page-header-image {
     background-position: 50%;
-    background-size: cover
+    background-size: cover;
+    background-image: url("/src/images/cc-bg-1.jpg");
 }
 
 .page-header .page-header-image {
@@ -3942,3 +3937,4 @@ a.credit {
 .section {
     padding-bottom: 0
 }
+
