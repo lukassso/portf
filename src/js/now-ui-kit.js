@@ -24,18 +24,27 @@ var fixedTop = false;
 var navbar_initialized,
     backgroundOrange = false,
     toggle_initialized = false;
+var nowuiKit,
+  $navbar,
+  scroll_distance,
+  oVal;
+
+
+// AOS.init();
+
+
 
 $(document).ready(function() {
     //  Activate the Tooltips
-    $('[data-toggle="tooltip"], [rel="tooltip"]').tooltip();
+    // $('[data-toggle="tooltip"], [rel="tooltip"]').tooltip();
 
     // Activate Popovers and set color for popovers
-    $('[data-toggle="popover"]').each(function() {
-        color_class = $(this).data('color');
-        $(this).popover({
-            template: '<div class="popover popover-' + color_class + '" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
-        });
-    });
+    // $('[data-toggle="popover"]').each(function() {
+    //     color_class = $(this).data('color');
+    //     $(this).popover({
+    //         template: '<div class="popover popover-' + color_class + '" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
+    //     });
+    // });
 
     // Activate the image for the navbar-collapse
     nowuiKit.initNavbarImage();
@@ -108,7 +117,7 @@ $(document).on('click', '.navbar-toggler', function() {
     $toggle = $(this);
 
     if (nowuiKit.misc.navbar_menu_visible == 1) {
-        $('html').removeClass('nav-open');
+        $('header').removeClass('nav-open');
         nowuiKit.misc.navbar_menu_visible = 0;
         $('#bodyClick').remove();
         setTimeout(function() {
@@ -120,7 +129,7 @@ $(document).on('click', '.navbar-toggler', function() {
         }, 580);
         div = '<div id="bodyClick"></div>';
         $(div).appendTo('body').click(function() {
-            $('html').removeClass('nav-open');
+            $('header').removeClass('nav-open');
             nowuiKit.misc.navbar_menu_visible = 0;
             setTimeout(function() {
                 $toggle.removeClass('toggled');
@@ -128,7 +137,7 @@ $(document).on('click', '.navbar-toggler', function() {
             }, 550);
         });
 
-        $('html').addClass('nav-open');
+        $('header').addClass('nav-open');
         nowuiKit.misc.navbar_menu_visible = 1;
     }
 });
@@ -235,3 +244,4 @@ function debounce(func, wait, immediate) {
         if (immediate && !timeout) func.apply(context, args);
     };
 };
+
