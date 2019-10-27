@@ -5,351 +5,371 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <script src="/src/js/jquery.js"></script>
-  <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"> -->
-   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> -->
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <title>CV Lukasz Zatyka</title>
   <meta name="description" content="Lukasz Zatyka, a front-end developer based in Warsaw." />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet"> -->
 </head>
 
 <body id="top">
+
   <header>
-    <div class="profile-page sidebar-collapse">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
-        <div class="container">
-          <div class="navbar-translate"><a class="navbar-brand" href="/" rel="tooltip">Resume</a>
-            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-              aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span
-                class="navbar-toggler-bar bar3"></span></button>
-          </div>
-          <div class="collapse navbar-collapse justify-content-end" id="navigation">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-            </ul>
-          </div>
+    <div class="container-fluid nav-wrapper">
+      <nav>
+        <div class="navigation">
+          <ul class="nav-items">
+            <li><a href="#about" target="_blank">About</a></li>
+            <li><a href="#skills" target="_blank">Skills</a></li>
+            <li><a href="#portfolio" target="_blank">Portfolio</a></li>
+            <li><a href="#experience" target="_blank">Experience</a></li>
+            <li><a href="#contact" target="_blank">Contact</a></li>
+          </ul>
+          <div class="nav-toogler"></div>
         </div>
       </nav>
     </div>
   </header>
+  <section class="page-header" filter-color="green">
+    <div class="page-header--bcgImage" data-paralax="true"></div>
+      <div class="container">
+        <div class="page-header--profileImage"><a href="#"><img src="./images/lukasface.png" alt="profile image"></a></div>
+        <div class="page-header--title">Lukas Zatyka</div>
+        <div class="page-header--claim">Freelancer with ❤️ to programming</div>
+        <div class="row">
+          <button class="btn btn-primary" href="#contact">Hire me</button>
+          <button class="btn btn-primary" href="#">Download CV</button>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- <div class="page-content"> -->
 
 
-  <div class="page-content">
-    <div>
-      <div class="profile-page">
-        <div class="wrapper">
-          <div class="page-header page-header-small" filter-color="green">
-            <div class="page-header-image" data-parallax="true" ></div>
+    <!-- <div class="profile-page">
+      <div class="wrapper">
+        <div class="page-header page-header-small" filter-color="green">
+          <div class="page-header-image" data-parallax="true"></div>
+          <div class="container">
+            <div class="content-center">
+              <div class="cc-profile-image"><a href="#"><img src="./images/lukasface.png" alt="Image" /></a></div>
+              <div class="h2 title">I'm the richest man!</div>
+              <p class="category text-white">Freelancer with ❤️ to programming</p><a
+                class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
+                data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary"
+                href="./images/CV-Lukasz-Zatyka.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download
+                CV</a>
+            </div>
+          </div>
+          <div class="section">
             <div class="container">
-              <div class="content-center">
-                <div class="cc-profile-image"><a href="#"><img src="./images/lukasface.png" alt="Image" /></a></div>
-                <div class="h2 title">Lukasz Zatyka</div>
-                <p class="category text-white">Freelancer with ❤️ to programming</p><a
-                  class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
-                  data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary"
-                  href="./images/CV-Lukasz-Zatyka.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
-              </div>
-            </div>
-            <div class="section">
-              <div class="container">
-                <div class="button-container">
-                  <button type="button" data-toggle="tooltip" data-placement="top" title="My Github profile" class="btn btn-primary btn-round">
-                  <a href="https://github.com/lukassso" ><i class="material-icons">face</i>
+              <div class="button-container">
+                <button type="button" data-toggle="tooltip" data-placement="top" title="My Github profile"
+                  class="btn btn-primary btn-round">
+                  <a href="https://github.com/lukassso"><i class="fa fa-github"></i>
                   </a>
-                  </button>
+                </button>
 
-                  <a class="btn btn-default btn-round btn-lg btn-icon"
-                    href="https://www.linkedin.com/in/lukasz-zatyka/" rel="tooltip" title="Follow me on LinkedIn"><i
-                      class="fa fa-linkedin"></i>
-                  </a>
-                  <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.behance.net/lukaszkolaa577"
-                    rel="tooltip" title="Follow me on Behance"><i class="fa fa-behance"></i>
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        <div id="demo"></div>
-      <div class="section" id="about">
-        <div class="container">
-          <div class="card" data-aos="fade-up" data-aos-offset="10">
-            <div class="row">
-              <div class="col-lg-6 col-md-12">
-                <div class="card-body">
-                  <div class="h4 mt-0 title">About</div>
-                  <p> I'm Lukas Zatyka, a front-end web developer based in Warsaw.</p>
-                  <p> I enjoy crafting digital experiences through code & design. I creating interactive, cross-browser
-                    designs in HTML, CSS, and JavaScript with clean and semantic code. I am constantly staying on top of
-                    the emerging trends, applying industry best practices, and adapting to modern web technologies and
-                    programs. I have passion for self-learning and strive to improve and challenge my skills to become
-                    better at what I do.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12">
-                <div class="card-body">
-                  <div class="h4 mt-0 title">Basic Information</div>
-                  <div class="row">
-                    <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-                    <div class="col-sm-8">37</div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">E-mail:</strong></div>
-                    <div class="col-sm-8">lukasz.zatyka@gmail.com</div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-                    <div id="number11" data-last="718 466" class="col-sm-8">+48 881 <span>click to see the number</span>
-                    </div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-                    <div class="col-sm-8">Poland, Warsaw</div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
-                    <div class="col-sm-8">Polish, English</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="skill">
-        <div class="container">
-          <div class="h4 text-center mb-4 title">Professional Skills</div>
-          <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">HTML / Photoshop /
-                      Illustrator / Xd</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2500" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 95%;"></div><span class="progress-value">95%</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">CSS / SCSS / Grid</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2000" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 85%;"></div><span class="progress-value">85%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">Java Script / ES5 / ES6</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2700" role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 65%;"></div><span class="progress-value">65%</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">Node.js / Vue.js / React.js  </span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2000" role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 45%;"></div><span class="progress-value">45%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">Gulp / Webpack / Babel</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2200" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">MySQL / NoSQL / MS SQL </span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2000" role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
-                    </div>
-                  </div>
-                </div>
+                <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/lukasz-zatyka/"
+                  rel="tooltip" title="Follow me on LinkedIn"><i class="fa fa-linkedin"></i>
+                </a>
+                <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.behance.net/lukaszkolaa577"
+                  rel="tooltip" title="Follow me on Behance"><i class="fa fa-behance"></i>
+                </a>
               </div>
 
             </div>
           </div>
         </div>
       </div>
-      
-      <div class="section" id="experience">
-        <div class="container cc-experience">
-          <div class="h4 text-center mb-4 title">Work Experience</div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>April 2019 - September 2019</p>
-                  <div class="h5">Reall Sp. z o.o.</div>
-                </div>
+    </div> -->
+    <!-- <div id="demo"></div> -->
+    <!-- <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top"
+      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on top
+    </button>
+    <div class="section" id="about">
+      <div class="container">
+        <div class="card" data-aos="fade-up" data-aos-offset="10">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="card-body">
+                <div class="h4 mt-0 title">About</div>
+                <p> I'm Lukas Zatyka, a front-end web developer based in Warsaw.</p>
+                <p> I enjoy crafting digital experiences through code & design. I creating interactive, cross-browser
+                  designs in HTML, CSS, and JavaScript with clean and semantic code. I am constantly staying on top of
+                  the emerging trends, applying industry best practices, and adapting to modern web technologies and
+                  programs. I have passion for self-learning and strive to improve and challenge my skills to become
+                  better at what I do.
+                </p>
               </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Front-end developer / UX Graphic Designer</div>
-                  <p>
-                    Improvement my web developer experiences as an agile teammate at the start-up application which helps the elderly to active and meaningful lives. Working with Google for Startups acceleration program. <br>
-                     Responsibilities:
-                    <ul>
-                      <li>UX/ UI prototypes (Adobe Xd/ Photoshop/ Illustrator)
-                      </li>
-                      <li>Programming (HTML/ SCSS/Bootstrap (firstly), Vue.js, Node.js, Express.js, RethingDB, GCP, npm, Webpack)
-                      </li>
-                      <li>Supporting company operations and strategy <a href="https://www.crisptime.com">Click to MVP</a> </li>
-                    </ul>
-                  </p>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="card-body">
+                <div class="h4 mt-0 title">Basic Information</div>
+                <div class="row">
+                  <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
+                  <div class="col-sm-8">37</div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4"><strong class="text-uppercase">E-mail:</strong></div>
+                  <div class="col-sm-8">lukasz.zatyka@gmail.com</div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
+                  <div id="number11" data-last="718 466" class="col-sm-8">+48 881 <span>click to see the number</span>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
+                  <div class="col-sm-8">Poland, Warsaw</div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
+                  <div class="col-sm-8">Polish, English</div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>May 2018 - March 2019</p>
-                  <div class="h5">CRI Poland Sp. z o.o.</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Solution Owner</div>
-                  <p>
-                    <ul>
-                      <li> Create and manage project plans to implement digital transformation (a mix of digital
-                        technologies) </li>
-                      <li>System administration and users support at ERP Comarch Optima (MSSQL, SAP Crystal Reports)
-                      </li>
-                      <li>Administration of the company's database server (SQL Server 2012, Comarch, Płatnik ZUS, dGCS)
-                      </li>
-                      <li>Work on the website project <a href="www.dev.cri-os.pl">developer version link</a> (MySQL,
-                        Wordpress) </li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>September 2017 - May 2018</p>
-                  <div class="h5">CRI Sp. z o.o.</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Project Manager</div>
-                  <p>
-                    <ul>
-                      <li>Managing quality control projects in teams of 50-150 people (ISO 9001, Lean, Kanban) </li>
-                      <li>Responsibility for achieving goals: timeliness, budget, efficiency </li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>January 2009 - May 2017</p>
-                  <div class="h5">Najlepszewakacje.pl - Travel Agency</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Co-Owner / Webdeveloper / Graphic Designer</div>
-                  <p>
-                    <ul>
-                      <li>Selection products and services required for business development</li>
-                      <li>Designing and contributing the project <a href="http://www.najlepszewakacje.pl"> Najlepszewakacje.pl</a> (UX, UI, HTML/CSS, Drupal, jQuery, Ajax, Rest API) </li>
-                      <li>Developing the e-commerce project <a href="http://www.pogotowieurlopowe.pl">Pogotowieurlopowe.pl</a> (UX, HTML/CSS, Bootstrap, SaaS) </li>
-                      <li>Creating effective newsletters with coding skills (HTML/CSS, Adobe Photoshop & Illustrator)
-                      </li>
-                      <li>Selection products and services required for business development</li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>January 2003 - May 2007</p>
-                  <div class="h5">WorkTech Sp z.o.o.</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Project Engineer and CNC Programmer</div>
-                  <p>
-                    <ul>
-                      <li>Design and development of molds for injection and blow molding using CAx </li>
-                      <li>Programming CNC numerical machines using G-code</li>
-                      <li>Create and update product documentation - drawings and specifications</li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
         </div>
-        <div class="section">
-          <div class="container cc-education">
-            <div class="h4 text-center mb-4 title">Education</div>
-
+      </div>
+    </div>
+    <div class="section" id="skill">
+      <div class="container">
+        <div class="h4 text-center mb-4 title">Professional Skills</div>
+        <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div class="card-body">
             <div class="row">
-              <div class="col-md-4" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="cc-education-header">
-                  <p>2005 - 2009</p>
-                  <div class="h5">Warsaw University of Technology</div>
-
+              <div class="col-md-6">
+                <div class="progress-container progress-primary"><span class="progress-badge">HTML / Photoshop /
+                    Illustrator / Xd</span>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                      data-aos-duration="2500" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                      aria-valuemax="100" style="width: 95%;"></div><span class="progress-value">95%</span>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-8" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <p>Mechatronics - Engineer's degree </p>
-
+              <div class="col-md-6">
+                <div class="progress-container progress-primary"><span class="progress-badge">CSS / SCSS / Grid</span>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                      data-aos-duration="2000" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                      aria-valuemax="100" style="width: 85%;"></div><span class="progress-value">85%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="progress-container progress-primary"><span class="progress-badge">Java Script / ES5 /
+                    ES6</span>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                      data-aos-duration="2700" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                      aria-valuemax="100" style="width: 65%;"></div><span class="progress-value">65%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="progress-container progress-primary"><span class="progress-badge">Node.js / Vue.js /
+                    React.js </span>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                      data-aos-duration="2000" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                      aria-valuemax="100" style="width: 45%;"></div><span class="progress-value">45%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="progress-container progress-primary"><span class="progress-badge">Gulp / Webpack /
+                    Babel</span>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                      data-aos-duration="2200" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                      aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="progress-container progress-primary"><span class="progress-badge">MySQL / NoSQL / MS SQL
+                  </span>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                      data-aos-duration="2000" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                      aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
+                  </div>
                 </div>
               </div>
             </div>
 
           </div>
         </div>
-        <!-- reference -->
-        <!-- <div class="section" id="reference">
+      </div>
+    </div>
+
+    <div class="section" id="experience">
+      <div class="container cc-experience">
+        <div class="h4 text-center mb-4 title">Work Experience</div>
+        <div class="card">
+          <div class="row">
+            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-experience-header">
+                <p>April 2019 - September 2019</p>
+                <div class="h5">Reall Sp. z o.o.</div>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5">Front-end developer / UX Graphic Designer</div>
+                <p>
+                  Improvement my web developer experiences as an agile teammate at the start-up application which
+                  helps the elderly to active and meaningful lives. Working with Google for Startups acceleration
+                  program. <br>
+                  Responsibilities:
+                  <ul>
+                    <li>UX/ UI prototypes (Adobe Xd/ Photoshop/ Illustrator)
+                    </li>
+                    <li>Programming (HTML/ SCSS/Bootstrap (firstly), Vue.js, Node.js, Express.js, RethingDB, GCP, npm,
+                      Webpack)
+                    </li>
+                    <li>Supporting company operations and strategy <a href="https://www.crisptime.com">Click to
+                        MVP</a> </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row">
+            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-experience-header">
+                <p>May 2018 - March 2019</p>
+                <div class="h5">CRI Poland Sp. z o.o.</div>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5">Solution Owner</div>
+                <p>
+                  <ul>
+                    <li> Create and manage project plans to implement digital transformation (a mix of digital
+                      technologies) </li>
+                    <li>System administration and users support at ERP Comarch Optima (MSSQL, SAP Crystal Reports)
+                    </li>
+                    <li>Administration of the company's database server (SQL Server 2012, Comarch, Płatnik ZUS, dGCS)
+                    </li>
+                    <li>Work on the website project <a href="www.dev.cri-os.pl">developer version link</a> (MySQL,
+                      Wordpress) </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row">
+            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-experience-header">
+                <p>September 2017 - May 2018</p>
+                <div class="h5">CRI Sp. z o.o.</div>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5">Project Manager</div>
+                <p>
+                  <ul>
+                    <li>Managing quality control projects in teams of 50-150 people (ISO 9001, Lean, Kanban) </li>
+                    <li>Responsibility for achieving goals: timeliness, budget, efficiency </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row">
+            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-experience-header">
+                <p>January 2009 - May 2017</p>
+                <div class="h5">Najlepszewakacje.pl - Travel Agency</div>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5">Co-Owner / Webdeveloper / Graphic Designer</div>
+                <p>
+                  <ul>
+                    <li>Selection products and services required for business development</li>
+                    <li>Designing and contributing the project <a href="http://www.najlepszewakacje.pl">
+                        Najlepszewakacje.pl</a> (UX, UI, HTML/CSS, Drupal, jQuery, Ajax, Rest API) </li>
+                    <li>Developing the e-commerce project <a
+                        href="http://www.pogotowieurlopowe.pl">Pogotowieurlopowe.pl</a> (UX, HTML/CSS, Bootstrap,
+                      SaaS) </li>
+                    <li>Creating effective newsletters with coding skills (HTML/CSS, Adobe Photoshop & Illustrator)
+                    </li>
+                    <li>Selection products and services required for business development</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row">
+            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-experience-header">
+                <p>January 2003 - May 2007</p>
+                <div class="h5">WorkTech Sp z.o.o.</div>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5">Project Engineer and CNC Programmer</div>
+                <p>
+                  <ul>
+                    <li>Design and development of molds for injection and blow molding using CAx </li>
+                    <li>Programming CNC numerical machines using G-code</li>
+                    <li>Create and update product documentation - drawings and specifications</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="section">
+        <div class="container cc-education">
+          <div class="h4 text-center mb-4 title">Education</div>
+
+          <div class="row">
+            <div class="col-md-4" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="cc-education-header">
+                <p>2005 - 2009</p>
+                <div class="h5">Warsaw University of Technology</div>
+
+              </div>
+            </div>
+            <div class="col-md-8" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <p>Mechatronics - Engineer's degree </p>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> -->
+      <!-- reference -->
+      <!-- <div class="section" id="reference">
           <div class="container cc-reference">
             <div class="h4 mb-4 text-center title">References</div>
             <div class="card" data-aos="zoom-in">
@@ -411,47 +431,46 @@
           </div>
         </div> -->
 
-        <div class="section" id="contact">
-          <div class="cc-contact-information" style="background-image: url('./src/images/staticmap.png');">
-            <div class="container">
-              <div class="cc-contact">
-                <div class="row">
-                  <div class="col-md-9">
-                    <div class="card mb-0" data-aos="zoom-in">
-                      <div class="h4 text-center title">Contact Me</div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="card-body">
-                            <form method="post">
-                              <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" name="email"
-                                  placeholder="Enter your email address">
-                              </div>
-                              <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" class="form-control" id="subject" name="subject">
-                              </div>
+      <!-- <div class="section" id="contact">
+        <div class="cc-contact-information" style="background-image: url('./src/images/staticmap.png');">
+          <div class="container">
+            <div class="cc-contact">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="card mb-0" data-aos="zoom-in">
+                    <div class="h4 text-center title">Contact Me</div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <form method="post">
+                            <div class="form-group">
+                              <label for="email">Email address</label>
+                              <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Enter your email address">
+                            </div>
+                            <div class="form-group">
+                              <label for="subject">Subject</label>
+                              <input type="text" class="form-control" id="subject" name="subject">
+                            </div>
 
-                              <div class="form-group">
-                                <label for="content">What would you like to ask us?</label>
-                                <textarea class="form-control" id="content" name="content" rows="3"></textarea>
-                              </div>
-                              <button type="submit" id="submit" class="btn btn-primary">Submit</button>
-                            </form>
-                          </div>
+                            <div class="form-group">
+                              <label for="content">What would you like to ask us?</label>
+                              <textarea class="form-control" id="content" name="content" rows="3"></textarea>
+                            </div>
+                            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                          </form>
                         </div>
+                      </div>
 
 
-                        <div class="col-md-6">
-                          <div class="card-body">
-                            <p class="mb-0"><strong>Address </strong></p>
-                            <p class="pb-2">05-500, Warsaw, Poland</p>
-                            <p class="mb-0"><strong>Phone</strong></p>
-                            <div id="number22" data-last="718 466" class="pb-2">+48 881 <span> click here </span></div>
-                            <p class="mb-0"><strong>E-mail</strong></p>
-                            <p>lukasz.zatyka@gmail.com</p>
-                          </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <p class="mb-0"><strong>Address </strong></p>
+                          <p class="pb-2">05-500, Warsaw, Poland</p>
+                          <p class="mb-0"><strong>Phone</strong></p>
+                          <div id="number22" data-last="718 466" class="pb-2">+48 881 <span> click here </span></div>
+                          <p class="mb-0"><strong>E-mail</strong></p>
+                          <p>lukasz.zatyka@gmail.com</p>
                         </div>
                       </div>
                     </div>
@@ -463,16 +482,19 @@
         </div>
       </div>
     </div>
-  </div>
-    <footer class="footer">
-      <div class="container text-center"><a class="cc-linkedin btn btn-link"
-          href="https://www.linkedin.com/in/lukasz-zatyka/"><i class="fa fa-linkedin fa-2x "
-            aria-hidden="true"></i></a></div>
-      <div class="h4 title text-center">Lukasz Zatyka</div>
-    </footer>
-    
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script> -->
-    
+  </div> -->
+<!-- 
+  <footer class="footer">
+    <div class="container text-center"><a class="cc-linkedin btn btn-link"
+        href="https://www.linkedin.com/in/lukasz-zatyka/"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a>
+    </div>
+    <div class="h4 title text-center">Lukasz Zatyka</div>
+  </footer> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script> -->
+
 </body>
+
 </html>

@@ -29,10 +29,7 @@ var nowuiKit,
   scroll_distance,
   oVal;
 
-
 // AOS.init();
-
-
 
 $(document).ready(function() {
     //  Activate the Tooltips
