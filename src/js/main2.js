@@ -11,8 +11,6 @@
 // var bootstrap = require('bootstrap');
 
 // Smooth scroll for links with hashes
-
-
 $('a.smooth-scroll')
 .click(function(event) {
   // On-page links

@@ -1,39 +1,42 @@
-$(".navbar-collapse").find("a").click(function(e) {
-    e.preventDefault();
-    var section = $(this).attr("href");
-    $("html, body").animate({
-        scrollTop: $(section).offset().top
+require('bootstrap');
+// require('font-awesome');
+const $ = require('jquery');
+
+	let navWrapper = document.querySelector('.nav-wrapper'),
+		navToogler =  document.querySelector('.nav-toogler'),
+    navigation = document.querySelector('.navigation')
+
+		navToogler.addEventListener('click', function (event) {
+		// navWrapper.classList.toggle('active');
+    navigation.classList.toggle('active2');
+    navToogler.classList.toggle('active3')
+
+		});
+
+    document.addEventListener('scroll', function(){
+    if (window.pageYOffset > 200 && !nav.classList.contains("small")){
+        nav.classList.add("small")
+    }
+    if (window.pageYOffset <= 200 && nav.classList.contains("small")){
+        nav.classList.remove("small")
+    }
+    })
+
+// $(document).ready(function(){});
+
+$("#demo").html("Hello, World!");
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
     });
-});
 
-$("form").submit(function (e) {
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    });
 
-    var error = "";
-
-    if ($("#email").val() == "") {
-        error += "The email field is required. <br>";
-    }
-
-    if ($("#subject").val() == "") {
-        error += "The subject field is required. <br>";
-    }
-
-    if ($("#content").val() == "") {
-        error += "The content field is required.";
-    }
-
-    if (error != "") {
-        $("#error").html('<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' + error + '</div>');
-        return false;
-    } else {
-        return true;
-    }
-
-});
-
-$('#number11').click(function() {
-  $(this).find('span').text( $(this).data('last') );
-});
-$('#number22').click(function() {
-  $(this).find('span').text( $(this).data('last') );
+    $('#number11').click(function() {
+      $(this).find('span').text( $(this).data('last') );
+    });
+    $('#number22').click(function() {
+      $(this).find('span').text( $(this).data('last') );
 });
