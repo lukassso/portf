@@ -7,8 +7,10 @@ const $ = require('jquery');
     navigation = document.querySelector('.navigation')
 
 		navToogler.addEventListener('click', function (event) {
-		navWrapper.classList.toggle('active');
-    navigation.classList.toggle('active2')
+		// navWrapper.classList.toggle('active');
+    navigation.classList.toggle('active2');
+    navToogler.classList.toggle('active3')
+
 		});
 
     document.addEventListener('scroll', function(){

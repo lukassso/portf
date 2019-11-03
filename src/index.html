@@ -16,9 +16,10 @@
 <body id="top">
 
   <header>
-    <div class="container-fluid nav-wrapper">
-      <nav>
-        <div class="navigation">
+    <div class="nav-wrapper">
+      <nav class="navigation">
+          
+          <div class="nav-toogler"></div>
           <ul class="nav-items">
             <li><a href="#about" target="_blank">About</a></li>
             <li><a href="#skills" target="_blank">Skills</a></li>
@@ -26,70 +27,90 @@
             <li><a href="#experience" target="_blank">Experience</a></li>
             <li><a href="#contact" target="_blank">Contact</a></li>
           </ul>
-          <div class="nav-toogler"></div>
-        </div>
       </nav>
     </div>
   </header>
-  <section class="page-header" filter-color="green">
-    <div class="page-header--bcgImage" data-paralax="true"></div>
-      <div class="container">
-        <div class="page-header--profileImage"><a href="#"><img src="./images/lukasface.png" alt="profile image"></a></div>
-        <div class="page-header--title">Lukas Zatyka</div>
-        <div class="page-header--claim">Freelancer with ❤️ to programming</div>
+  <section class="page-header">
+    <div class="page-header__bcgImage">
+        <div class="page-header__profileImage"><img src="./images/lukasface.png" alt="profile image"></div>
+        <div class="page-header__content">
+          <h1>Lukas Zatyka</h1>
+          <h2>Freelancer with ❤️ to programming</h2>
+          <div class="row page-header__actionButtons">
+            <button class="btn btn-primary page-header__button" href="#contact">Hire me</button>
+            <button class="btn btn-primary page-header__button" href="#">Download CV</button>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- <section>
+    <div class="button-container">
+      <button type="button" data-toggle="tooltip" data-placement="top" title="My Github profile"
+        class="btn btn-primary btn-round">
+        <a href="https://github.com/lukassso"><i class="fa fa-github"></i>
+        </a>
+      </button>
+
+      <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/lukasz-zatyka/"
+        rel="tooltip" title="Follow me on LinkedIn"><i class="fa fa-linkedin"></i>
+      </a>
+      <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.behance.net/lukaszkolaa577" rel="tooltip"
+        title="Follow me on Behance"><i class="fa fa-behance"></i>
+      </a>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="card" data-aos="fade-up" data-aos-offset="10">
         <div class="row">
-          <button class="btn btn-primary" href="#contact">Hire me</button>
-          <button class="btn btn-primary" href="#">Download CV</button>
+          <div class="col-lg-6 col-md-12">
+            <div class="card-body">
+              <div class="h4 mt-0 title">About</div>
+              <p> I'm Lukas Zatyka, a front-end web developer based in Warsaw.</p>
+              <p> I enjoy crafting digital experiences through code & design. I creating interactive, cross-browser
+                designs in HTML, CSS, and JavaScript with clean and semantic code. I am constantly staying on top of
+                the emerging trends, applying industry best practices, and adapting to modern web technologies and
+                programs. I have passion for self-learning and strive to improve and challenge my skills to become
+                better at what I do.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="card-body">
+              <div class="h4 mt-0 title">Basic Information</div>
+              <div class="row">
+                <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
+                <div class="col-sm-8">37</div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-4"><strong class="text-uppercase">E-mail:</strong></div>
+                <div class="col-sm-8">lukasz.zatyka@gmail.com</div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
+                <div id="number11" data-last="718 466" class="col-sm-8">+48 881 <span>click to see the number</span>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
+                <div class="col-sm-8">Poland, Warsaw</div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
+                <div class="col-sm-8">Polish, English</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-  </section>
+    </div>
+    </div>
+  </section> -->
 
   <!-- <div class="page-content"> -->
-
-
-    <!-- <div class="profile-page">
-      <div class="wrapper">
-        <div class="page-header page-header-small" filter-color="green">
-          <div class="page-header-image" data-parallax="true"></div>
-          <div class="container">
-            <div class="content-center">
-              <div class="cc-profile-image"><a href="#"><img src="./images/lukasface.png" alt="Image" /></a></div>
-              <div class="h2 title">I'm the richest man!</div>
-              <p class="category text-white">Freelancer with ❤️ to programming</p><a
-                class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
-                data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary"
-                href="./images/CV-Lukasz-Zatyka.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download
-                CV</a>
-            </div>
-          </div>
-          <div class="section">
-            <div class="container">
-              <div class="button-container">
-                <button type="button" data-toggle="tooltip" data-placement="top" title="My Github profile"
-                  class="btn btn-primary btn-round">
-                  <a href="https://github.com/lukassso"><i class="fa fa-github"></i>
-                  </a>
-                </button>
-
-                <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/lukasz-zatyka/"
-                  rel="tooltip" title="Follow me on LinkedIn"><i class="fa fa-linkedin"></i>
-                </a>
-                <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.behance.net/lukaszkolaa577"
-                  rel="tooltip" title="Follow me on Behance"><i class="fa fa-behance"></i>
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div id="demo"></div> -->
-    <!-- <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top"
-      data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-      Popover on top
-    </button>
+  <!-- <div class="profile-page">
+     
+ 
     <div class="section" id="about">
       <div class="container">
         <div class="card" data-aos="fade-up" data-aos-offset="10">
@@ -368,8 +389,8 @@
 
         </div>
       </div> -->
-      <!-- reference -->
-      <!-- <div class="section" id="reference">
+  <!-- reference -->
+  <!-- <div class="section" id="reference">
           <div class="container cc-reference">
             <div class="h4 mb-4 text-center title">References</div>
             <div class="card" data-aos="zoom-in">
@@ -431,7 +452,7 @@
           </div>
         </div> -->
 
-      <!-- <div class="section" id="contact">
+  <!-- <div class="section" id="contact">
         <div class="cc-contact-information" style="background-image: url('./src/images/staticmap.png');">
           <div class="container">
             <div class="cc-contact">
@@ -483,7 +504,7 @@
       </div>
     </div>
   </div> -->
-<!-- 
+  <!-- 
   <footer class="footer">
     <div class="container text-center"><a class="cc-linkedin btn btn-link"
         href="https://www.linkedin.com/in/lukasz-zatyka/"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a>
