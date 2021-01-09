@@ -21,10 +21,6 @@ const autoprefixer = require('gulp-autoprefixer');
 
 //test
 
-gulp.task('default', (callback) => {
-  runSequence(['watch', 'sass', 'browserSync'],
-  callback)
-})
 
 gulp.task('browserSync', () => {
     browserSync.init( {
@@ -82,4 +78,10 @@ gulp.task('scripts', function () {
     gutil.log(gutil.colors.red('[Error]'), err.toString());
   })
   .pipe(gulp.dest('js'));
+})
+
+
+gulp.task('default', (callback) => {
+  runSequence(['watch', 'sass', 'browserSync'],
+  callback)
 })
